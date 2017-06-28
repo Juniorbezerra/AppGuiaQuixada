@@ -1,9 +1,6 @@
 package com.app.juniorbezerra.appguiaquixada.view;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,9 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.app.juniorbezerra.appguiaquixada.R;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -28,8 +23,6 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
 
     @BindView(R.id.nav_view)
     NavigationView navigationView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +65,7 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_sobre) {
             return true;
         }
 
