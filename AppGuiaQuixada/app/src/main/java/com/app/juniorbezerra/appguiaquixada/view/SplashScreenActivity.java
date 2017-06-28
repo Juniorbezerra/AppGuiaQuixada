@@ -1,7 +1,9 @@
-package com.app.juniorbezerra.appguiaquixada;
+package com.app.juniorbezerra.appguiaquixada.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.app.juniorbezerra.appguiaquixada.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
