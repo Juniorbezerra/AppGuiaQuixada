@@ -2,6 +2,8 @@ package com.app.juniorbezerra.appguiaquixada.view;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -33,12 +35,15 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
 
         setSupportActionBar(toolbar);
 
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+
+        this.defaultFragment();
     }
 
     @Override
@@ -75,14 +80,43 @@ public class PrincipalActivity extends AppCompatActivity implements NavigationVi
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_inicio) {
+        Fragment fragment = null;
+        Class fragmentClass = null;
 
+        if (id == R.id.nav_inicio) {
+            fragmentClass = PrincipalFragment.class;
         }
+
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.frame_content,fragment).commit();
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void defaultFragment(){
+        Fragment fragment = null;
+        Class fragmentClass  = PrincipalFragment.class;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,fragment).commit();
     }
 }
