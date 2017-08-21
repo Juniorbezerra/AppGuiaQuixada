@@ -8,8 +8,28 @@
             android:title="Início" />
 
         <item
-            android:id="@+id/nav_favoritos"
-            android:icon="@drawable/ic_stars_48px"
-            android:title="Lugares favoritos" />
+            android:id="@+id/nav_sobreQuixada"
+            android:icon="@drawable/about"
+            android:title="Sobre Quixadá" />
+
+        <item
+            android:id="@+id/nav_gastrononia"
+            android:icon="@drawable/comer"
+            android:title="Gastrononia" />
+
+        <item
+            android:id="@+id/nav_hospedagem"
+            android:icon="@drawable/dormir"
+            android:title="Hospedagem" />
+
+        <item
+            android:id="@+id/nav_pracas"
+            android:icon="@drawable/praca"
+            android:title="Praças" />
+
+        <item
+            android:id="@+id/nav_igrejas"
+            android:icon="@drawable/igreja"
+            android:title="Igrejas" />
     </group>
 </menu>

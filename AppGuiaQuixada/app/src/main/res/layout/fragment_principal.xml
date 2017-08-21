@@ -2,13 +2,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="11dp"
     tools:context="com.app.juniorbezerra.appguiaquixada.view.PrincipalFragment">
 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Junior"/>
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:id="@+id/sobre"
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/about" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:textAlignment="center"
+             android:text="Sobre Quixadá" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center"
+             android:src="@drawable/comer" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:textAlignment="center"
+             android:text="Gastrononia" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center_horizontal"
+             android:textAlignment="center"
+             android:src="@drawable/dormir" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:text="Hospedagem" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/praca" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:textAlignment="center"
+             android:text="Praças" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center"
+             android:src="@drawable/igreja" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:textAlignment="center"
+             android:text="Igrejas" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:padding="5dp"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_gravity="center_horizontal"
+             android:textAlignment="center"
+             android:src="@drawable/dormir" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:textSize="13sp"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:text="Hospedagem" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   </LinearLayout>
 
 </FrameLayout>
